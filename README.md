@@ -17,8 +17,8 @@ end
 
 ```elixir
 iex> Integral.monte_carlo_method(fn x -> x end, 0, 10)
-      50.06474343307806
+50.06474343307806
 
-      iex> Integral.simpson_method(fn x -> x end, 0, 10)
-      50.00000000000001
+iex> Integral.simpson_method(fn x -> x end, 0, 10)
+50.00000000000001
 ```
