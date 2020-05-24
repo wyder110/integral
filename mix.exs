@@ -7,7 +7,11 @@ defmodule Integral.MixProject do
       version: "0.1.0",
       elixir: "~> 1.10",
       start_permanent: Mix.env() == :prod,
-      deps: deps()
+      deps: deps(),
+      description: description(),
+      package: package(),
+      name: "Monte Carlo and Simpson method",
+      source_url: "https://github.com/elixir-ecto/postgrex"
     ]
   end
 
@@ -25,4 +29,18 @@ defmodule Integral.MixProject do
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
   end
+
+  defp description() do
+    "Implementation of Monte Carlo, and Simpson method in elixir"
+  end
+
+  defp package() do
+    [
+      name: "Monte Carlo and Simpson method",
+      licenses: [],
+      links: %{"GitHub" => "https://github.com/wyder110/integral.git"}
+    ]
+  end
+
+
 end
